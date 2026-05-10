@@ -1,0 +1,217 @@
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #dff6f8;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+.container {
+
+    width: 85%;
+
+    max-width: 360px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.profile-pics {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.profile-pics img {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid white;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#bhai-pic {
+
+    margin-right: -10px;
+
+    z-index: 2;
+}
+
+#deeksha-pic {
+
+    margin-left: -10px;
+}
+
+#question {
+
+    color: #0b8b7d;
+
+    font-size: 28px;
+
+    font-family: cursive;
+}
+
+#sub-text {
+
+    color: gray;
+
+    font-size: 18px;
+}
+
+.btn-group {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    position: relative;
+}
+
+button {
+
+    border: none;
+
+    padding: 14px 18px;
+
+    border-radius: 50px;
+
+    font-size: 16px;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#yes-btn {
+
+    background: #4caf50;
+}
+
+#no-btn {
+
+    background: #ff3b30;
+
+    position: relative;
+}
+
+#confirm-btn {
+
+    background: #ff9800;
+}
+
+.hidden {
+
+    display: none;
+}
+
+#celebration-box {
+
+    margin-top: 30px;
+
+    animation: pop 0.7s ease;
+}
+
+#celebration-box h2 {
+
+    color: #ff4d6d;
+
+    font-size: 32px;
+}
+
+#celebration-box p {
+
+    font-size: 20px;
+
+    color: #444;
+}
+
+#treat-choice {
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 2px solid #0b8b7d;
+
+    font-size: 16px;
+}
+
+.celebration {
+
+    font-size: 34px;
+
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes pop {
+
+    0% {
+
+        transform: scale(0.5);
+
+        opacity: 0;
+    }
+
+    100% {
+
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0px);
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+    }
+
+    100% {
+
+        transform: translateY(0px);
+    }
+}
